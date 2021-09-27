@@ -178,7 +178,7 @@ h3 {
   color: #373737;
   font-size: 15px;
   line-height: 25px;
-  font-weight: 250;
+  font-weight: bold;
 }
 /* Processing forms */
 input[name="fio"] {
