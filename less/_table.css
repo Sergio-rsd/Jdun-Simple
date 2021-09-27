@@ -1,0 +1,59 @@
+.grid-container {
+  margin: 15px 30px;
+  display: grid;
+  grid-template-areas: "post-1 post-2 post-2 post-2" "post-3 post-4 post-5 post-6" "post-3 post-7 post-8 post-9" "post-3 post-10 post-11 post-12";
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+[class^="zagol-"] {
+  border: 1px black solid;
+  padding: 15px 10px;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+}
+[class^="data-"] {
+  border: 1px black solid;
+  padding: 15px 10px;
+  min-width: 50px;
+  display: grid;
+  place-items: center;
+}
+.zagol-11 {
+  grid-area: post-1;
+  background-color: #e6e6fa;
+}
+.zagol-13 {
+  grid-area: post-2;
+  background-color: #e6e6fa;
+}
+.zagol-22 {
+  grid-area: post-3;
+}
+.zagol-2-1 {
+  grid-area: post-4;
+}
+.zagol-2-2 {
+  grid-area: post-5;
+}
+.zagol-2-3 {
+  grid-area: post-6;
+}
+.data-1 {
+  grid-area: post-7;
+}
+.data-2 {
+  grid-area: post-8;
+}
+.data-3 {
+  grid-area: post-9;
+}
+.data-4 {
+  grid-area: post-10;
+}
+.data-5 {
+  grid-area: post-11;
+}
+.data-6 {
+  grid-area: post-12;
+}
