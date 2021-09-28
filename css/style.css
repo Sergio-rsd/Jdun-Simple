@@ -102,6 +102,9 @@ body {
     font-size: 25px;
   }
 }
+.textName {
+  font-weight: 600;
+}
 .textBold {
   font-size: 20px;
   font-weight: 500;
