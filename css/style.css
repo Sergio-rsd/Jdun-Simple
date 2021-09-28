@@ -124,7 +124,25 @@ body {
 }
 @media all and (min-width: 0) and (max-width: 768px) {
   .portret {
-    width: 330px;
+    width: 320px;
+  }
+}
+.miniPortret {
+  width: 470px;
+  height: 300px;
+}
+@media all and (min-width: 0) and (max-width: 768px) {
+  .miniPortret {
+    width: 320px;
+    height: 204px;
+  }
+}
+.mapYandex {
+  padding: 0 25%;
+}
+@media all and (min-width: 0) and (max-width: 768px) {
+  .mapYandex {
+    padding: 0;
   }
 }
 /* Menu design */
