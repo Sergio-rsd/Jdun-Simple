@@ -5,6 +5,11 @@
   grid-template-rows: repeat(4, auto);
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+@media all and (min-width: 0) and (max-width: 768px) {
+  .grid-container {
+    margin: 0;
+  }
+}
 [class^="zagol-"] {
   border: 1px black solid;
   padding: 15px 10px;
@@ -12,12 +17,24 @@
   place-items: center;
   font-weight: 600;
 }
+@media all and (min-width: 0) and (max-width: 768px) {
+  [class^="zagol-"] {
+    font-size: 13px;
+    padding: 3px 3px;
+  }
+}
 [class^="data-"] {
   border: 1px black solid;
   padding: 15px 10px;
   min-width: 50px;
   display: grid;
   place-items: center;
+}
+@media all and (min-width: 0) and (max-width: 768px) {
+  [class^="data-"] {
+    font-size: 13px;
+    padding: 3px 3px;
+  }
 }
 .zagol-11 {
   grid-area: post-1;

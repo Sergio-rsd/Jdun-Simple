@@ -1,3 +1,4 @@
+@import "_adaptiv";
 //! Cool table!!
 .grid-container {
   margin: 15px 30px;
@@ -9,6 +10,11 @@
     "post-3 post-10 post-11 post-12";
   grid-template-rows: repeat(4, auto);
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  .respondCustom(@xxsFrom, @smFrom, {
+    margin: 0;
+  }
+
+);
 }
 [class^="zagol-"] {
   border: 1px black solid;
@@ -16,6 +22,12 @@
   display: grid;
   place-items: center;
   font-weight: 600;
+  .respondCustom(@xxsFrom, @smFrom, {
+    font-size: 13px;
+    padding: 3px 3px;
+  }
+
+);
 }
 [class^="data-"] {
   border: 1px black solid;
@@ -23,6 +35,12 @@
   min-width: 50px;
   display: grid;
   place-items: center;
+  .respondCustom(@xxsFrom, @smFrom, {
+    font-size: 13px;
+    padding: 3px 3px;
+  }
+
+);
 }
 
 .zagol-11 {
