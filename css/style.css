@@ -209,6 +209,7 @@ h3 {
   background-color: #e2e2e2;
   text-align: center;
   margin-top: 35px;
+  padding: 6px 0;
 }
 .textCenter {
   text-align: center;
@@ -217,7 +218,7 @@ h3 {
   color: #707070;
   font-size: 16px;
   font-style: italic;
-  line-height: 16px;
+  line-height: 22px;
   font-weight: 600;
 }
 .long p {
@@ -234,15 +235,30 @@ h3 {
   font-size: 140%;
 }
 .metki {
-  list-style-image: url(../img/mini20jdun.png);
-  list-style-position: inside;
+  list-style-type: none;
 }
 .metki li {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: #373737;
   font-size: 15px;
   line-height: 25px;
   font-weight: bold;
+  padding-left: 30px;
+}
+.metki li::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/mini20jdun.png) center no-repeat;
+  background-size: cover;
+  margin-left: -35px;
+}
+@media all and (min-width: 0) and (max-width: 768px) {
+  .metki li::before {
+    margin-top: 5%;
+  }
 }
 /* Processing forms */
 input[name="fio"] {
